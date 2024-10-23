@@ -31,13 +31,6 @@
       "url": "api-reference"
     }
   ],
-  "anchors": [
-    {
-      "name": "Support",
-      "icon": "ticket",
-      "url": "https://support.optible.ai"
-    }
-  ],
   "navigation": [
     {
       "group": "Getting Started",

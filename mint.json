@@ -42,7 +42,8 @@
     {
       "group": "Getting Started",
       "pages": [
-        "how-to/assessors/create-a-grant-program"
+        "how-to/assessors/create-a-grant-program",
+        "how-to/assessors/design-and-customise-forms"
       ]
     }
   ],

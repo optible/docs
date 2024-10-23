@@ -42,67 +42,9 @@
     {
       "group": "Getting Started",
       "pages": [
-        {
-          "name": "Introduction",
-          "url": "/getting-started/introduction"
-        },
-        {
-          "name": "Installation",
-          "url": "/getting-started/installation"
-        },
-        {
-          "name": "Quick Start Guide",
-          "url": "/getting-started/quick-start"
-        }
+        "Assessors/how-to-create-a-grant-program"
       ]
     },
-    {
-      "group": "Features",
-      "pages": [
-        {
-          "name": "Grant Programs",
-          "url": "/features/grant-programs"
-        },
-        {
-          "name": "Progress Reports",
-          "url": "/features/progress-reports"
-        },
-        {
-          "name": "Approval Mechanisms",
-          "url": "/features/approval-mechanisms"
-        }
-      ]
-    },
-    {
-      "group": "API Reference",
-      "pages": [
-        {
-          "name": "Authentication",
-          "url": "/api-reference/authentication"
-        },
-        {
-          "name": "Endpoints",
-          "url": "/api-reference/endpoints"
-        },
-        {
-          "name": "Error Handling",
-          "url": "/api-reference/error-handling"
-        }
-      ]
-    },
-    {
-      "group": "Support",
-      "pages": [
-        {
-          "name": "FAQ",
-          "url": "/support/faq"
-        },
-        {
-          "name": "Contact Us",
-          "url": "/support/contact"
-        }
-      ]
-    }
   ],
   "footerSocials": {
     "x": "https://x.com/mintlify",

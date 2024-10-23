@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Optible Help Documentations",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
@@ -18,12 +18,12 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "https://support.optible.ai"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://app.optible.ai"
   },
   "tabs": [
     {
@@ -40,9 +40,8 @@
   ],
   "navigation": [
     {
-      "name": "Getting Started",
-      "url": "/getting-started",
-      "children": [
+      "group": "Getting Started",
+      "pages": [
         {
           "name": "Introduction",
           "url": "/getting-started/introduction"
@@ -58,9 +57,8 @@
       ]
     },
     {
-      "name": "Features",
-      "url": "/features",
-      "children": [
+      "group": "Features",
+      "pages": [
         {
           "name": "Grant Programs",
           "url": "/features/grant-programs"
@@ -76,9 +74,8 @@
       ]
     },
     {
-      "name": "API Reference",
-      "url": "/api-reference",
-      "children": [
+      "group": "API Reference",
+      "pages": [
         {
           "name": "Authentication",
           "url": "/api-reference/authentication"
@@ -94,9 +91,8 @@
       ]
     },
     {
-      "name": "Support",
-      "url": "/support",
-      "children": [
+      "group": "Support",
+      "pages": [
         {
           "name": "FAQ",
           "url": "/support/faq"

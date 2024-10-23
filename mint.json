@@ -34,7 +34,7 @@
   "anchors": [
     {
       "name": "Support",
-      "icon": "support",
+      "icon": "ticket",
       "url": "https://support.optible.ai"
     }
   ],

@@ -42,20 +42,12 @@
     {
       "group": "Getting Started",
       "pages": [
-        "Assessors", 
-        {
-          "group": "Assessors",
-          "pages": [
         "how-to/assessors/create-a-grant-program",
         "how-to/assessors/design-and-customise-forms"
-          ]
-        }
       ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "linkedin": "https://www.linkedin.com/company/optible-ai?originalSubdomain=au"
   }
 }

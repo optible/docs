@@ -29,6 +29,10 @@
     {
       "name": "Changelog",
       "url": "changelog"
+    },
+     {
+        "name": "Blog",
+        "url": "https://your-website.com/blog"
     }
   ],
   "navigation": [
@@ -40,7 +44,7 @@
       ]
     },
     {
-        "group": "Changelog",
+     "group": "Changelog",
       "pages": [
         "changelog/october-2024.mdx"
       ]

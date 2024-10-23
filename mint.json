@@ -33,23 +33,80 @@
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "name": "Support",
+      "icon": "support",
+      "url": "https://support.optible.ai"
     }
   ],
   "navigation": [
-    
+    {
+      "name": "Getting Started",
+      "url": "/getting-started",
+      "children": [
+        {
+          "name": "Introduction",
+          "url": "/getting-started/introduction"
+        },
+        {
+          "name": "Installation",
+          "url": "/getting-started/installation"
+        },
+        {
+          "name": "Quick Start Guide",
+          "url": "/getting-started/quick-start"
+        }
+      ]
+    },
+    {
+      "name": "Features",
+      "url": "/features",
+      "children": [
+        {
+          "name": "Grant Programs",
+          "url": "/features/grant-programs"
+        },
+        {
+          "name": "Progress Reports",
+          "url": "/features/progress-reports"
+        },
+        {
+          "name": "Approval Mechanisms",
+          "url": "/features/approval-mechanisms"
+        }
+      ]
+    },
+    {
+      "name": "API Reference",
+      "url": "/api-reference",
+      "children": [
+        {
+          "name": "Authentication",
+          "url": "/api-reference/authentication"
+        },
+        {
+          "name": "Endpoints",
+          "url": "/api-reference/endpoints"
+        },
+        {
+          "name": "Error Handling",
+          "url": "/api-reference/error-handling"
+        }
+      ]
+    },
+    {
+      "name": "Support",
+      "url": "/support",
+      "children": [
+        {
+          "name": "FAQ",
+          "url": "/support/faq"
+        },
+        {
+          "name": "Contact Us",
+          "url": "/support/contact"
+        }
+      ]
+    }
   ],
   "footerSocials": {
     "x": "https://x.com/mintlify",

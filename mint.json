@@ -35,6 +35,7 @@
     {
       "group": "Getting Started",
       "pages": [
+        "introduction",
         "how-to/assessors/create-a-grant-program",
         "how-to/assessors/design-and-customise-forms"
       ]

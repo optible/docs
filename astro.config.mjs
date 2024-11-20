@@ -6,6 +6,8 @@ import mdx from "@astrojs/mdx";
 
 import icon from "astro-icon";
 
+import cloudflare from "@astrojs/cloudflare";
+
 // https://astro.build/config
 export default defineConfig({
   integrations: [
@@ -94,4 +96,7 @@ export default defineConfig({
     mdx(),
     icon(),
   ],
+
+  output: "server",
+  adapter: cloudflare(),
 });

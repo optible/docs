@@ -1,4 +1,4 @@
-:root, 
+:root,
 :root[data-theme="light"] {
     --sl-font-system: "Poppins";
     --sl-nav-height: 6rem;
@@ -496,7 +496,7 @@ starlight-tabs ul[role="tablist"] {
 }
 
 
-.site-title img{
+.site-title img {
     height: 35px;
 }
 
@@ -504,24 +504,25 @@ starlight-tabs ul[role="tablist"] {
     background-color: white; */
 /* } */
 
-.sidebar-content li a[aria-current=page]{
+.sidebar-content li a[aria-current=page] {
     background: none;
     color: var(--sl-color-accent);
 }
 
-.sidebar-content li a[aria-current=page] span{
+.sidebar-content li a[aria-current=page] span {
     color: var(--sl-color-accent) !important;
     font-weight: bold !important;
 }
 
-.pagination-links a{
+.pagination-links a {
     border: none;
     box-shadow: none;
 }
 
-.pagination-links a span{
+.pagination-links a span {
     font-size: 12px;
 }
-.pagination-links a span.link-title{
+
+.pagination-links a span.link-title {
     font-size: 16px;
 }

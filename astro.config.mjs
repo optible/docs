@@ -28,66 +28,75 @@ export default defineConfig({
       },
       sidebar: [
         {
-          label: "Onboarding",
+          label: "Assessors",
           items: [
             {
-              label: "Create a Grant Program",
-              slug: "guides/how-to/assessors/create-a-grant-program",
-            },
-            {
-              label: "Add Criteria",
-              slug: "guides/how-to/assessors/add-criteria",
-            },
-            {
-              label: "Design and Customise Forms",
-              slug: "guides/how-to/assessors/design-and-customise-forms",
-            },
-          ],
-        },
-        {
-          label: "Dashboard",
-          items: [
-            {
-              label: "Grants List",
-              slug: "guides/how-to/assessors/add-criteria",
-            },
-            { label: "Reports", slug: "guides/how-to/assessors/add-criteria" },
-            { label: "Forms", slug: "guides/how-to/assessors/add-criteria" },
-            { label: "Settings", slug: "guides/how-to/assessors/add-criteria" },
-          ],
-        },
-        {
-          label: "Grant",
-          items: [
-            {
-              label: "Dashboard",
-              slug: "guides/how-to/assessors/add-criteria",
-            },
-            { label: "Settings", slug: "guides/how-to/assessors/add-criteria" },
-            {
-              label: "Detail",
+              label: "Get Started",
               items: [
                 {
-                  label: "Application Detail",
-                  slug: "guides/how-to/assessors/add-criteria",
+                  label: "Create a Grant Program",
+                  slug: "guides/assessors/create-a-grant-program",
                 },
                 {
-                  label: "Attachments",
-                  slug: "guides/how-to/assessors/add-criteria",
+                  label: "Add Criteria",
+                  slug: "guides/assessors/add-criteria",
                 },
                 {
-                  label: "Payments",
-                  slug: "guides/how-to/assessors/add-criteria",
+                  label: "Design and Customise Forms",
+                  slug: "guides/assessors/design-and-customise-forms",
                 },
               ],
             },
-          ],
+            {
+              collapsed: true,
+              label: "Dashboard",
+              items: [
+                {
+                  label: "Grants List",
+                  slug: "guides/assessors/dashboard/grants-list",
+                },
+                { label: "Reports", slug: "guides/assessors/add-criteria" },
+                { label: "Forms", slug: "guides/assessors/add-criteria" },
+                { label: "Settings", slug: "guides/assessors/add-criteria" },
+              ],
+            },
+            {
+              collapsed: true,
+              label: "Grant",
+              items: [
+                {
+                  label: "Dashboard",
+                  slug: "guides/assessors/grant/dashboard",
+                },
+                { label: "Settings", slug: "guides/assessors/add-criteria" },
+                {
+                  label: "Detail",
+                  items: [
+                    {
+                      label: "Application Detail",
+                      slug: "guides/assessors/add-criteria",
+                    },
+                    {
+                      label: "Attachments",
+                      slug: "guides/assessors/add-criteria",
+                    },
+                    {
+                      label: "Payments",
+                      slug: "guides/assessors/add-criteria",
+                    },
+                  ],
+                },
+              ],
+            },
+          ]
         },
         {
+          collapsed: true,
           label: "Trust Center",
-          items: ["trust-center/compliance"],
+          items: [{ "label": "Compliance", "slug": "trust-center/compliance" }],
         },
         {
+          collapsed: true,
           label: "Changelog",
           items: ["changelog/october-2024"],
         },
@@ -98,5 +107,9 @@ export default defineConfig({
   ],
 
   output: "server",
-  adapter: cloudflare(),
+  adapter: cloudflare({
+    platformProxy: {
+      enabled: true,
+    },
+  }),
 });

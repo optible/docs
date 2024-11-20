@@ -98,7 +98,7 @@ export default defineConfig({
         {
           collapsed: true,
           label: "Changelog",
-          items: ["changelog/october-2024"],
+          items: ["changelog/2024/november"],
         },
       ],
     }),

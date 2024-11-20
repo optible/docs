@@ -1,0 +1,78 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Optible Help Documentations",
+  "logo": {
+    "dark": "/logo/logo-white.svg",
+    "light": "/logo/logo-blue.svg"
+  },
+  "favicon": "/favicon.png",
+  "colors": {
+    "primary": "#0057FF",
+    "light": "#4F9CFA",
+    "dark": "#ffa800",
+    "anchors": {
+      "from": "#0D9373",
+      "to": "#07C983"
+    }
+  },
+  "theme": "prism",
+  "font": {
+    "headings": {
+      "family": "Poppins"
+    },
+    "body": {
+      "family": "Poppins"
+    }
+  },
+  "sidebar": {
+    "items": "card"
+  },
+  "topbarLinks": [
+    {
+      "name": "Support",
+      "url": "mailto:support@optible.ai"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Dashboard",
+    "url": "https://app.optible.ai"
+  },
+  "tabs": [
+    {
+      "name": "Changelog",
+      "url": "changelog"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Welcome",
+      "pages": [
+        "introduction"
+      ]
+    },
+    {
+      "group": "Onboarding",
+      "pages": [
+        "how-to/assessors/create-a-grant-program",
+        "how-to/assessors/add-criteria",
+        "how-to/assessors/design-and-customise-forms"
+      ]
+    },
+    {
+      "group": "Dashboard",
+      "pages": [
+        "dashboard/grant-list-page",
+        "dashboard/grant-detail-page"
+      ]
+    },
+    {
+      "group": "Changelog",
+      "pages": [
+        "changelog/october-2024"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "linkedin": "https://www.linkedin.com/company/optible-ai?originalSubdomain=au"
+  }
+}

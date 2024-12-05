@@ -1,0 +1,49 @@
+---
+import config from "virtual:starlight/user-config";
+import type {Props} from "@astrojs/starlight/props";
+
+import Search from "virtual:starlight/components/Search";
+import SiteTitle from "virtual:starlight/components/SiteTitle";
+import SocialIcons from "virtual:starlight/components/SocialIcons";
+// import ThemeSelect from "virtual:starlight/components/ThemeSelect";
+---
+  <div class="container-auto mx-auto flex items-center justify-between py-4 px-6">
+    <!-- Logo -->
+    <SiteTitle {...Astro.props} />
+
+    <!-- Navigation Tabs -->
+    <nav class="flex space-x-6 text-sm font-medium">
+      <a href="/" class="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
+        Documentation
+      </a>
+      <a href="/knowledge-base/" class="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
+        Knowledge Base
+      </a>
+      <a href="/changelogs/" class="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
+        Changelogs
+      </a>
+    </nav>
+
+    <div class="w-12 lg:w-[164px] xl:w-[512px]">
+        <Search {...Astro.props} />
+      </div>
+    <!-- Theme Toggle + LinkedIn Icon -->
+    <div class="flex items-center space-x-4">
+      <!-- LinkedIn Icon -->
+      <a
+        href="https://www.linkedin.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.5c-.966 0-1.5-.768-1.5-1.5s.534-1.5 1.5-1.5 1.5.768 1.5 1.5-.534 1.5-1.5 1.5zm13.5 11.5h-3v-5.646c0-1.345-.024-3.077-1.876-3.077-1.878 0-2.166 1.466-2.166 2.981v5.742h-3v-10h2.879v1.367h.041c.401-.759 1.381-1.556 2.841-1.556 3.04 0 3.601 2 3.601 4.605v5.584z"
+          />
+        </svg>
+      </a>
+
+      <!-- Theme Toggle -->
+      <!-- <ThemeSelect {...Astro.props} /> -->
+    </div>
+  </div>

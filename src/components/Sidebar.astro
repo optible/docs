@@ -1,0 +1,24 @@
+---
+import Default from '@astrojs/starlight/components/Sidebar.astro';
+import type { Props } from '@astrojs/starlight/props';
+
+// Get the base path of the current URL
+const seperatedSections = ["changelog", "knowledge-base"];
+
+const currentBase = Astro.url.pathname.split('/')[1];
+let showOnlySections = false;
+if (seperatedSections.includes(currentBase.toLowerCase())) {
+  showOnlySections = true;
+}
+
+console.log("Show Only Sections: ", showOnlySections);
+
+// Filter our sidebar groups that do not include links to the current product.
+Astro.props.sidebar = showOnlySections ? [] : Astro.props.sidebar
+  .filter((entry) => (
+    entry.type === 'group' &&
+    (showOnlySections ? seperatedSections.includes(entry.label.toLowerCase()) : !seperatedSections.includes(entry.label.toLowerCase()))
+  ));
+---
+
+<Default {...Astro.props}><slot /></Default>

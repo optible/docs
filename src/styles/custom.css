@@ -155,7 +155,7 @@
     /* Key Layout Values */
     --sl-nav-height: 80px;
     --sl-sidebar-width: 18.75rem;
-    --sl-content-width: 60rem;
+    --sl-content-width: 100%;
     --sl-line-height: 1.5;
     --sl-line-height-headings: 1.2;
     --sl-z-index-navbar: 10;
@@ -178,9 +178,9 @@
     border: none;
 }
 
-.sidebar-content ul li>details ul li>details ul li {
+.sidebar-content ul li>details ul li {
     border-inline-start: 1px solid var(--sl-color-hairline-light);
-    padding-inline-start: 0px;
+    padding-inline-start: 0.2rem;
 }
 
 .sidebar-content ul li a,
@@ -193,8 +193,8 @@
 .sidebar-content ul li a:hover {
     background: var(--light-background);
     border-left: 0.3rem solid var(--primary-color);
-    margin-left: -0.15rem;
-    padding-left: 0.4rem;
+    margin-left: -0.4rem;
+    padding-left: 0.61rem;
     border-radius: 0;
     color: var(--text)
 }
@@ -208,6 +208,13 @@ strong {
     font-size: var(--heading5-font-size)
 }
 
+.sl-markdown-content h3 {
+    font-size: var(--body-font-size);
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
 a:where(.astro-u2l5gyhi) {
     box-shadow: none;
 }
@@ -218,4 +225,8 @@ a:where(.astro-u2l5gyhi) .link-title {
 
 img:where(.astro-m46x6ez3) {
     height: 40px;
+}
+
+.right-sidebar-container {
+    width: var(--sl-sidebar-width);
 }

@@ -12,6 +12,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://support.optible.ai",
   integrations: [starlight({
     title: "Optible Help Documentations",
     customCss: ["./src/styles/custom.css", "@fontsource/poppins", "@fontsource/poppins/400.css", "@fontsource/poppins/500.css", "@fontsource/poppins/600.css", "@fontsource/poppins/700.css", "@fontsource/poppins/800.css", "@fontsource/poppins/900.css"],
@@ -26,71 +27,78 @@ export default defineConfig({
     },
     components: {
       Header: './src/components/Header.astro',
+      Sidebar: './src/components/Sidebar.astro',
     },
     sidebar: [
       {
-        label: "Assessors",
+        // label: "Assessors",
+        // items: [
+        //   {
+        label: "Get Started",
+        collapsed: true,
         items: [
           {
-            label: "Get Started",
-            items: [
-              {
-                label: "Create a Grant Program",
-                slug: "guides/assessors/create-a-grant-program",
-              },
-              {
-                label: "Add Criteria",
-                slug: "guides/assessors/add-criteria",
-              },
-              {
-                label: "Design and Customise Forms",
-                slug: "guides/assessors/design-and-customise-forms",
-              },
-            ],
+            label: "Create a Grant Program",
+            slug: "assessors/create-a-grant-program",
           },
           {
-            collapsed: true,
-            label: "Dashboard",
-            items: [
-              {
-                label: "Grants List",
-                slug: "guides/assessors/dashboard/grants-list",
-              },
-              { label: "Reports", slug: "guides/assessors/add-criteria" },
-              { label: "Forms", slug: "guides/assessors/add-criteria" },
-              { label: "Settings", slug: "guides/assessors/add-criteria" },
-            ],
+            label: "Add Criteria",
+            slug: "assessors/add-criteria",
           },
           {
-            collapsed: true,
-            label: "Grant",
-            items: [
-              {
-                label: "Dashboard",
-                slug: "guides/assessors/grant/dashboard",
-              },
-              { label: "Settings", slug: "guides/assessors/add-criteria" },
-              {
-                label: "Detail",
-                items: [
-                  {
-                    label: "Application Detail",
-                    slug: "guides/assessors/add-criteria",
-                  },
-                  {
-                    label: "Attachments",
-                    slug: "guides/assessors/add-criteria",
-                  },
-                  {
-                    label: "Payments",
-                    slug: "guides/assessors/add-criteria",
-                  },
-                ],
-              },
-            ],
+            label: "Design and Customise Forms",
+            slug: "assessors/design-and-customise-forms",
           },
-        ]
+        ],
       },
+      {
+        collapsed: true,
+        label: "Dashboard",
+        items: [
+          {
+            label: "Grants List",
+            slug: "assessors/dashboard/grants-list",
+          },
+          { label: "Reports", slug: "assessors/add-criteria" },
+          { label: "Forms", slug: "assessors/add-criteria" },
+          { label: "Settings", slug: "assessors/add-criteria" },
+        ],
+      },
+      {
+        collapsed: true,
+        label: "Grant",
+        items: [
+          {
+            label: "Dashboard",
+            slug: "assessors/grant/dashboard",
+          },
+          { label: "Settings", slug: "assessors/add-criteria" },
+          {
+            label: "Detail",
+            items: [
+              {
+                label: "Application Detail",
+                slug: "assessors/add-criteria",
+              },
+              {
+                label: "Attachments",
+                slug: "assessors/add-criteria",
+              },
+              {
+                label: "Payments",
+                slug: "assessors/add-criteria",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        collapsed: true,
+        label: "Forms",
+        autogenerate: { directory: 'assessors/forms' },
+      },
+      //   ]
+      // },
       {
         collapsed: true,
         label: "Trust Center",
@@ -99,7 +107,7 @@ export default defineConfig({
       {
         collapsed: true,
         label: "Changelog",
-        items: ["changelog/2024/november"],
+        autogenerate: { directory: 'changelog' },
       },
     ],
   }), mdx(), icon(), tailwind()],

@@ -7,11 +7,28 @@ import SiteTitle from "virtual:starlight/components/SiteTitle";
 // import SocialIcons from "virtual:starlight/components/SocialIcons";
 // import ThemeSelect from "virtual:starlight/components/ThemeSelect";
 ---
+<script>
+  if (typeof window !== 'undefined') {
+    (function(d) {
+      const script = d.createElement('script');
+      script.async = false;
+      script.onload = function () {
+        (window as any).Plain.init({
+          appId: 'liveChatApp_01JDPR7N4SE8F7P20XW0RYQE48',
+        });
+      };
+      script.src = 'https://chat.cdn-plain.com/index.js';
+      d.getElementsByTagName('head')[0].appendChild(script);
+    })(document);
+  }
+</script>
+
+
   <div class="container-auto mx-auto flex items-center justify-between py-4 px-6">
     <!-- Logo -->
     <SiteTitle {...Astro.props} />
 
-    <!-- Navigation Tabs -->
+    <!-- Navigation Tabs
     <nav class="flex space-x-6 text-sm font-medium">
       <a href="/" class="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
         Documentation

@@ -11,13 +11,11 @@ if (seperatedSections.includes(currentBase.toLowerCase())) {
   showOnlySections = true;
 }
 
-console.log("Show Only Sections: ", showOnlySections);
-
 // Filter our sidebar groups that do not include links to the current product.
 Astro.props.sidebar = showOnlySections ? [] : Astro.props.sidebar
   .filter((entry) => (
     entry.type === 'group' &&
-    (showOnlySections ? seperatedSections.includes(entry.label.toLowerCase()) : !seperatedSections.includes(entry.label.toLowerCase()))
+    (showOnlySections ? seperatedSections.includes(entry.label.replaceAll(" ", "-").toLowerCase()) : !seperatedSections.includes(entry.label.replaceAll(" ", "-").toLowerCase()))
   ));
 ---
 

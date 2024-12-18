@@ -208,6 +208,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"knowledge-base/clear-cache.mdx": {
+	id: "knowledge-base/clear-cache.mdx";
+  slug: "knowledge-base/clear-cache";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "trust-center/compliance.mdx": {
 	id: "trust-center/compliance.mdx";
   slug: "trust-center/compliance";

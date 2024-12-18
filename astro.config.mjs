@@ -109,6 +109,11 @@ export default defineConfig({
         label: "Changelog",
         autogenerate: { directory: 'changelog' },
       },
+      {
+        collapsed: true,
+        label: "Knowledge Base",
+        autogenerate: { directory: 'knowledge-base' },
+      }
     ],
   }), mdx(), icon(), tailwind()],
 

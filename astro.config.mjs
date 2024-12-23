@@ -73,22 +73,35 @@ export default defineConfig({
             slug: "assessors/grant/dashboard",
           },
           { label: "Settings", slug: "assessors/add-criteria" },
+        ],
+      },
+      {
+        collapsed: true,
+        label: "Application",
+        items: [
           {
-            label: "Detail",
-            items: [
-              {
-                label: "Application Detail",
-                slug: "assessors/add-criteria",
-              },
-              {
-                label: "Attachments",
-                slug: "assessors/add-criteria",
-              },
-              {
-                label: "Payments",
-                slug: "assessors/add-criteria",
-              },
-            ],
+            label: "Application Detail",
+            slug: "assessors/grant/application",
+          },
+          {
+            label: "Application Header",
+            slug: "assessors/grant/application/header",
+          },
+          {
+            label: "Criteria Ranking",
+            slug: "assessors/grant/application/criteria-ranking",
+          },
+          {
+            label: "Smart Insights",
+            slug: "assessors/grant/application/smart-insights",
+          },
+          {
+            label: "Attachments",
+            slug: "assessors/add-criteria",
+          },
+          {
+            label: "Payments",
+            slug: "assessors/add-criteria",
           },
         ],
       },

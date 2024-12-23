@@ -202,6 +202,7 @@
 b,
 strong {
     font-weight: 500;
+    color: var(--base-black);
 }
 
 .sl-markdown-content h2:not(:where(.not-content *)) {
@@ -223,10 +224,25 @@ a:where(.astro-u2l5gyhi) .link-title {
     font-size: var(--large-text-font-size)
 }
 
+.sl-markdown-content img {
+    border: 8px solid var(--border-dark);
+    border-radius: 16px;
+    width: 100%;
+}
+
 img:where(.astro-m46x6ez3) {
     height: 40px;
 }
 
 .right-sidebar-container {
     width: var(--sl-sidebar-width);
+}
+
+.sl-markdown-content ul,
+.sl-markdown-content ol {
+    list-style: disc;
+    margin-left: 20px;
+    /* Adds space for bullets */
+    padding-left: 20px;
+    /* Default for unordered lists */
 }

@@ -173,6 +173,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"assessors/dashboard/settings.mdx": {
+	id: "assessors/dashboard/settings.mdx";
+  slug: "assessors/dashboard/settings";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "assessors/design-and-customise-forms.mdx": {
 	id: "assessors/design-and-customise-forms.mdx";
   slug: "assessors/design-and-customise-forms";

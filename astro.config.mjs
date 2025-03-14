@@ -61,7 +61,7 @@ export default defineConfig({
           },
           { label: "Reports", slug: "assessors/add-criteria" },
           { label: "Forms", slug: "assessors/add-criteria" },
-          { label: "Settings", slug: "assessors/add-criteria" },
+          { label: "Settings", slug: "assessors/dashboard/settings" },
         ],
       },
       {

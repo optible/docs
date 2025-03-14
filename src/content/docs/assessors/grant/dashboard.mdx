@@ -5,11 +5,44 @@ description: 'Dashboard for a grant program'
 ![Dashboard](/images/guides/grant-detail-dashboard.png)
 
 ## 1. Grant Settings
+- Allows users to configure or modify grant-related settings. Upon clicking, teh user is navigated to a grant settings page where they can modify grant related settings.
+
+---
 
 ## 2. Summary Charts
+- Provides visual representation of grant application process using various key metrics(**Total Applications**, **New Submissions**, **Processing**, **Outcomes**) each represented by circular progress indicators.
+- Clicking on a chart filters the application list below based on the selected category.
+    - Example: Clicking "Processing" (30) updates the list to show only applications in the Processing stage.
+
+
+---
 
 ## 3. Export Capabilities
+- Provides different ways to view and download application data. The application needs to be selected at first to enable these options.
+   - **First Icon (Panel View)**: Display applications in a structured format.
+   - **Second Icon (Excel Export)**: Allows to download applications in an Excel file (.xlsx) format.
+   - **Third Icon (Printable/PDF Export)**: Enables download applications in a print-friendly format (PDF).
+
+
+---
 
 ## 4. Filters
+- A dropdown filter allows users to refine the application list based on the application status.
+
 
 ## 5. Applications List
+- Displays a list of applications with details, which includes:
+   - **Name**: Displays the name of the applicant.
+
+   - **Email**: Displays the email of the applicant.
+
+   - **Y/N/Maybe**: Categorizes application based on their score/rank.
+      - **Y**:  If the rank is greater than 70, the application is considered a Yes.
+      - **N**: If the rank is less than 50 or below, the application is considered a No.
+      - **Maybe**: If the rank is greater than 50 and less 70, the application is considered a Maybe.
+
+   - **Score**: Displays the rank of the application.
+
+   - **Date Submitted**: The submission date of the application.
+   
+   - **Status**: The status of the application if the application is **Approved** or **Rejected**.

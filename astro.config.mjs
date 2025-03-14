@@ -61,7 +61,7 @@ export default defineConfig({
           },
           { label: "Reports", slug: "assessors/add-criteria" },
           { label: "Forms", slug: "assessors/add-criteria" },
-          { label: "Settings", slug: "assessors/add-criteria" },
+          { label: "Settings", slug: "assessors/dashboard/settings" },
         ],
       },
       {
@@ -72,7 +72,20 @@ export default defineConfig({
             label: "Dashboard",
             slug: "assessors/grant/dashboard",
           },
-          { label: "Settings", slug: "assessors/add-criteria" },
+          { 
+            collapsed:true,
+            label: "Grant Settings", 
+            items:[
+              {label:"Grant Management", slug:"assessors/grant/grant-settings/grant-management"},
+              {label:"Assessors", slug:"assessors/grant/grant-settings/assessors"},
+              {label:"Email templates", slug:"assessors/grant/grant-settings/email-templates"},
+              {label:"Application Report Export", slug:"assessors/grant/grant-settings/grant-management"},
+              {label:"Application Stages", slug:"assessors/grant/grant-settings/grant-management"},
+              {label:"Contracts and Letters", slug:"assessors/grant/grant-settings/grant-management"},
+              {label:"Form Templates", slug:"assessors/grant/grant-settings/grant-management"},
+            ]
+            // slug: "assessors/grant/settings" 
+          },
         ],
       },
       {
@@ -97,11 +110,11 @@ export default defineConfig({
           },
           {
             label: "Attachments",
-            slug: "assessors/add-criteria",
+            slug: "assessors/grant/application/attachments",
           },
           {
             label: "Payments",
-            slug: "assessors/add-criteria",
+            slug: "assessors/grant/application/payments",
           },
         ],
       },

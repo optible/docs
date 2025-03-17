@@ -59,8 +59,8 @@ export default defineConfig({
             label: "Grants List",
             slug: "assessors/dashboard/grants-list",
           },
-          { label: "Reports", slug: "assessors/add-criteria" },
-          { label: "Forms", slug: "assessors/add-criteria" },
+          { label: "Reports", slug: "assessors/dashboard/reports" },
+          { label: "Forms", slug: "assessors/dashboard/forms" },
           { label: "Settings", slug: "assessors/dashboard/settings" },
         ],
       },
@@ -70,7 +70,11 @@ export default defineConfig({
         items: [
           {
             label: "Dashboard",
-            slug: "assessors/grant/dashboard",
+            items:[
+              {label:"Grant Dashboard", slug:"assessors/grant/grant-dashboard/dashboard"},
+              {label:"Advanced Filtering", slug:"assessors/grant/grant-dashboard/advanced-filtering"},
+            ],
+            // slug: "assessors/grant/dashboard",
           },
           { 
             collapsed:true,

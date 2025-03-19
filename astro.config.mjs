@@ -83,10 +83,10 @@ export default defineConfig({
               {label:"Grant Management", slug:"assessors/grant/grant-settings/grant-management"},
               {label:"Assessors", slug:"assessors/grant/grant-settings/assessors"},
               {label:"Email templates", slug:"assessors/grant/grant-settings/email-templates"},
-              {label:"Application Report Export", slug:"assessors/grant/grant-settings/grant-management"},
-              {label:"Application Stages", slug:"assessors/grant/grant-settings/grant-management"},
-              {label:"Contracts and Letters", slug:"assessors/grant/grant-settings/grant-management"},
-              {label:"Form Templates", slug:"assessors/grant/grant-settings/grant-management"},
+              {label:"Application Report Export", slug:"assessors/grant/grant-settings/application-report-export"},
+              {label:"Application Stages", slug:"assessors/grant/grant-settings/application-stages"},
+              {label:"Contracts and Letters", slug:"assessors/grant/grant-settings/contracts-and-letters"},
+              {label:"Form Templates", slug:"assessors/grant/grant-settings/form-templates"},
             ]
             // slug: "assessors/grant/settings" 
           },
@@ -120,6 +120,10 @@ export default defineConfig({
             label: "Payments",
             slug: "assessors/grant/application/payments",
           },
+          {
+            label:"Hisory and Comments",
+            slug:"assessors/grant/application/history-and-comments",
+          }
         ],
       },
       {

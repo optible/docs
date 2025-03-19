@@ -3,4 +3,51 @@ title: Email Templates
 description: ''
 ---
 
-This page displays a list of Email Templates 
+The **Email Templates** displays a list of email templates, which are templates for sending email which are triggered by specific events. This page allows to add a new email template, edit and delete the existing email templates.
+
+## 1. Add Email Templates
+
+![Add Email Templates](/images/guides/email-templates/add-email-template.png)
+
+- The plus button allows to add a new email template.
+- Upon clicking, would navigate to a page, where we can add a new email template.
+- It provides fields to be filled to provide the details of the email template. The fields are as follows:
+
+    - **Status**: It has a dropdown menu where users can select a status. Eg: **Approved**, **Awaiting Review**, **Rejected** etc. When the status is triggered, the email template is being shown in the modal form which can be amended before sending.
+    ![Status](/images/guides/email-templates/status.png)
+
+    - **Form Name**: Allows to add a form name.
+    ![Form Name](/images/guides/email-templates/form-name.png)
+
+    - **Subject**: This field defines the subject line of the email.
+    ![Subject](/images/guides/email-templates/subject.png)
+
+    - **Reply To**: Specifies the email address where responses will be received.
+    ![Reply To](/images/guides/email-templates/reply.png)
+
+    - **Available Variables**: This section serves as a reference purpose for users to be used as variables. These variables can be used in **Subject** and **Body** section of the template. For eg: Placeholders like **&#123;&#123;.name&#125;&#125;, &#123;&#123;.email&#125;&#125;** and many more as shown below are replaced with actual values when the email is sent. 
+    ![Available Variables](/images/guides/available-variables.png)
+
+    - **Body**: This is a Rich Text Editor field which provides formatting tools to customize the email, including bold text, lists, tables, and headers.
+    ![Body](/images/guides/email-templates/body.png)
+
+After filling in all the required fields and finalizing the email template, users can save the template. Once saved, the template will be added to the Email Templates List, where it can be viewed, edited, or deleted as needed.
+
+<hr/>
+
+## 2. Email Templates List
+    - The Email Templates page displays a list of pre-configured email templates.This list allows users to manage existing templates, including editing and deleting them, as well as adding new templates.
+
+    ![Email Templates List](/images/guides/email-templates/email-template-list.png)
+
+    - The Email Templates List displays the following columns:
+    
+        - **Subject**: The subject line of the email that will be sent.
+
+        - **Triggered On**: Specifies the event that activates the email template.
+
+        - **Last Updated**: Displays the date when the template was last modified.
+
+        - **Action**: Provides two options:
+                - **Edit**: Allows users to modify the existing template.
+                - **Delete**: Removes the template from the list.

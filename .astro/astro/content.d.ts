@@ -157,196 +157,203 @@ declare module 'astro:content' {
   slug: "assessors/add-criteria";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "assessors/create-a-grant-program.mdx": {
 	id: "assessors/create-a-grant-program.mdx";
   slug: "assessors/create-a-grant-program";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "assessors/dashboard/forms.mdx": {
 	id: "assessors/dashboard/forms.mdx";
   slug: "assessors/dashboard/forms";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "assessors/dashboard/grants-list.mdx": {
 	id: "assessors/dashboard/grants-list.mdx";
   slug: "assessors/dashboard/grants-list";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "assessors/dashboard/reports.mdx": {
 	id: "assessors/dashboard/reports.mdx";
   slug: "assessors/dashboard/reports";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "assessors/dashboard/settings.mdx": {
 	id: "assessors/dashboard/settings.mdx";
   slug: "assessors/dashboard/settings";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "assessors/design-and-customise-forms.mdx": {
 	id: "assessors/design-and-customise-forms.mdx";
   slug: "assessors/design-and-customise-forms";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "assessors/forms/fields.mdx": {
 	id: "assessors/forms/fields.mdx";
   slug: "assessors/forms/fields";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "assessors/grant/application/attachments.mdx": {
 	id: "assessors/grant/application/attachments.mdx";
   slug: "assessors/grant/application/attachments";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "assessors/grant/application/criteria-ranking.mdx": {
 	id: "assessors/grant/application/criteria-ranking.mdx";
   slug: "assessors/grant/application/criteria-ranking";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "assessors/grant/application/header.mdx": {
 	id: "assessors/grant/application/header.mdx";
   slug: "assessors/grant/application/header";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "assessors/grant/application/history-and-comments.mdx": {
 	id: "assessors/grant/application/history-and-comments.mdx";
   slug: "assessors/grant/application/history-and-comments";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "assessors/grant/application/index.mdx": {
 	id: "assessors/grant/application/index.mdx";
   slug: "assessors/grant/application";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "assessors/grant/application/payments.mdx": {
 	id: "assessors/grant/application/payments.mdx";
   slug: "assessors/grant/application/payments";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"assessors/grant/application/post-success-report.mdx": {
+	id: "assessors/grant/application/post-success-report.mdx";
+  slug: "assessors/grant/application/post-success-report";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "assessors/grant/application/smart-insights.mdx": {
 	id: "assessors/grant/application/smart-insights.mdx";
   slug: "assessors/grant/application/smart-insights";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "assessors/grant/grant-dashboard/advanced-filtering.mdx": {
 	id: "assessors/grant/grant-dashboard/advanced-filtering.mdx";
   slug: "assessors/grant/grant-dashboard/advanced-filtering";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "assessors/grant/grant-dashboard/dashboard.mdx": {
 	id: "assessors/grant/grant-dashboard/dashboard.mdx";
   slug: "assessors/grant/grant-dashboard/dashboard";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "assessors/grant/grant-settings/application-report-export.mdx": {
 	id: "assessors/grant/grant-settings/application-report-export.mdx";
   slug: "assessors/grant/grant-settings/application-report-export";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "assessors/grant/grant-settings/application-stages.mdx": {
 	id: "assessors/grant/grant-settings/application-stages.mdx";
   slug: "assessors/grant/grant-settings/application-stages";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "assessors/grant/grant-settings/assessors.mdx": {
 	id: "assessors/grant/grant-settings/assessors.mdx";
   slug: "assessors/grant/grant-settings/assessors";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "assessors/grant/grant-settings/contracts-and-letters.mdx": {
 	id: "assessors/grant/grant-settings/contracts-and-letters.mdx";
   slug: "assessors/grant/grant-settings/contracts-and-letters";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "assessors/grant/grant-settings/email-templates.mdx": {
 	id: "assessors/grant/grant-settings/email-templates.mdx";
   slug: "assessors/grant/grant-settings/email-templates";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "assessors/grant/grant-settings/form-templates.mdx": {
 	id: "assessors/grant/grant-settings/form-templates.mdx";
   slug: "assessors/grant/grant-settings/form-templates";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "assessors/grant/grant-settings/grant-management.mdx": {
 	id: "assessors/grant/grant-settings/grant-management.mdx";
   slug: "assessors/grant/grant-settings/grant-management";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "changelog/index.mdx": {
 	id: "changelog/index.mdx";
   slug: "changelog";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "index.mdx": {
 	id: "index.mdx";
   slug: "index";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "knowledge-base/clear-cache.mdx": {
 	id: "knowledge-base/clear-cache.mdx";
   slug: "knowledge-base/clear-cache";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "trust-center/compliance.mdx": {
 	id: "trust-center/compliance.mdx";
   slug: "trust-center/compliance";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 };
 
@@ -358,5 +365,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = never;
+	export type ContentConfig = typeof import("../../src/content/config.js");
 }

@@ -1,0 +1,71 @@
+---
+title: Advanced Filtering
+description: ''
+---
+
+The **Advanced Filtering** feature allows users to search and filter applications based on various conditions. The **Filter** button enables the advanced filtering options, making it easier to refine the displayed data.
+
+## How Advanced Filtering works
+
+![Advanced Filtering](/images/guides/advanced-filtering/advanced-filter.png)
+
+### 1. Click on the Filter button
+    - When the **Filter** button is clicked, the advanced filtering section appears just below the **Filter** button which allows users to define specific conditions for filtering applications.
+
+### 2. Content or Title
+    - A dropdown menu is provided which allows users to select the field to filter by.
+    - The filtering options include fields from the **Applications table headers** as well as **Form fields**, allowing users to refine their search based on specific criteria.
+
+![Content or Title](/images/guides/advanced-filtering/content-title.png)
+
+### 3. Operator Dropdown
+    - Defines a comparision rule for the selected field.
+    - The **operator** dropdown dynamically adjusts based on the selected **Content or Title** field. For eg:
+        - If the selected field is a text-based field (e.g., applicant name, status), operators like **Is Equal To** and **Is Not Equal To** are available. 
+        ![Operator Text Based](/images/guides/advanced-filtering/operator-string.png)
+
+        - If the field contains numerical values (e.g., rank or scores), operators such as **Is Equal To**, **Is Greater Than**, **Less Than** etc are provided.
+        ![Operator Numerical](/images/guides/advanced-filtering/operator-num.png)
+
+    - So, this depends on the selected **Content or Title** field.
+
+
+### 4. Value
+    - The value field allows users to input a specific value to be searched for.
+    - When the Content provided is **Email**, Operator is **Matches a Pattern** and Value is **sameer**, the result is shown as below.
+
+![Value](/images/guides/advanced-filtering/adv-filter-result.png)
+
+### 5. Add Filter
+    - Adding another filter allows compound filtering where multiple conditions can be combined using either:
+        - **AND:** The results must satisfy all applied filters.
+        - **OR:** The results will include entries that match at least one of the filters.
+
+![Multiple Filtering](/images/guides/advanced-filtering/multiple-filtering.png)
+
+### 6. Applying and Saving Filter
+    - Once a filter is applied, we can **Save** it for later use as well.
+
+        **Saving Options:**
+            - Save for Myself : The filter will be available only to the user who created it.
+            - Save for Organization : The filter will be accessible to all users within the organization.
+
+            ![Advanced Filtering Save](/images/guides/advanced-filtering/adv-filter-save.png)
+
+
+ ### 7. Filter Naming Modal 
+    - Upon selecting a save option, a modal appears prompting the user to enter a name for the filter. This ensures easy identification and retrieval of saved filters later.
+
+ ![Filter Naming Modal](/images/guides/advanced-filtering/filter-modal.png)
+
+
+ ### 8. Quick Filter
+    - After saving a filter with a specific name, it appears as a **Quick Filter** at the top of the application list. Upon clicking would filter the applications list based on the selected filter.
+
+![Quick Filter](/images/guides/advanced-filtering/quick-filter.png)
+
+
+
+
+
+    

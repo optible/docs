@@ -10,7 +10,15 @@ The key features of this page include:
 - **Predefined Structure**: Displays fields as configured in the builder.
 - **Validation**: Validation rules are defined in the Form Builder and enforced on the Forms Page. Examples include:
     - **Required Fields**: If a field is marked as required, the form cannot be submitted without it.
+
     - **Numeric Validation**: Numeric fields must meet set constraints (e.g., “Value must be greater than 100”).
+    - **File Validation**: 
+        - Users can specify the types of files that can be uploaded. The file maybe of All Types, or of specific type (e.g., **img, pdf, videos, docs** etc.) 
+        - The system enforces limits on the number of files that can be uploaded at once. The form builder allows configuration such as:
+            - **Single File Upload**: Only one file can be uploaded.
+            - **Multiple Files Upload**: Allows multiple files, with a maximum limit (e.g., 5, 10, etc.).
+        - **File SIze Limit**: Users can define maximum file size constraints for uploads to prevent excessively large files. The available file sizes are **5MB, 10MB, 50MB, 100MB**. 
+        
     - **Character Limits**: A Rich Text Field may allow up to 750 words.
     
 - The Forms Page will prevent submission if any validation rule is not met, displaying appropriate error messages to guide the user as shown below.

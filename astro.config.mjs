@@ -103,6 +103,14 @@ export default defineConfig({
             label: "Payments",
             slug: "assessors/add-criteria",
           },
+          {
+            label:"Post Success Report",
+            slug:"assessors/grant/application/post-success-report",
+          },
+          {
+            label:"Expenditures",
+            slug:"assessors/grant/application/expenditures"
+          }
         ],
       },
       {

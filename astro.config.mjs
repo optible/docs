@@ -59,9 +59,9 @@ export default defineConfig({
             label: "Grants List",
             slug: "assessors/dashboard/grants-list",
           },
-          { label: "Reports", slug: "assessors/add-criteria" },
+          { label: "Reports", slug: "assessors/dashboard/reports" },
           { label: "Forms", slug: "assessors/dashboard/forms" },
-          { label: "Settings", slug: "assessors/add-criteria" },
+          { label: "Settings", slug: "assessors/dashboard/settings" },
         ],
       },
       {
@@ -70,9 +70,26 @@ export default defineConfig({
         items: [
           {
             label: "Dashboard",
-            slug: "assessors/grant/dashboard",
+            items:[
+              {label:"Grant Dashboard", slug:"assessors/grant/grant-dashboard/dashboard"},
+              {label:"Advanced Filtering", slug:"assessors/grant/grant-dashboard/advanced-filtering"},
+            ],
+            // slug: "assessors/grant/dashboard",
           },
-          { label: "Settings", slug: "assessors/add-criteria" },
+          { 
+            collapsed:true,
+            label: "Grant Settings", 
+            items:[
+              {label:"Grant Management", slug:"assessors/grant/grant-settings/grant-management"},
+              {label:"Assessors", slug:"assessors/grant/grant-settings/assessors"},
+              {label:"Email templates", slug:"assessors/grant/grant-settings/email-templates"},
+              {label:"Application Report Export", slug:"assessors/grant/grant-settings/application-report-export"},
+              {label:"Application Stages", slug:"assessors/grant/grant-settings/application-stages"},
+              {label:"Contracts and Letters", slug:"assessors/grant/grant-settings/contracts-and-letters"},
+              {label:"Form Templates", slug:"assessors/grant/grant-settings/form-templates"},
+            ]
+            // slug: "assessors/grant/settings" 
+          },
         ],
       },
       {
@@ -97,11 +114,15 @@ export default defineConfig({
           },
           {
             label: "Attachments",
-            slug: "assessors/add-criteria",
+            slug: "assessors/grant/application/attachments",
           },
           {
             label: "Payments",
-            slug: "assessors/add-criteria",
+            slug: "assessors/grant/application/payments",
+          },
+          {
+            label:"History and Comments",
+            slug:"assessors/grant/application/history-and-comments",
           },
           {
             label:"Post Success Report",

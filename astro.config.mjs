@@ -121,8 +121,16 @@ export default defineConfig({
             slug: "assessors/grant/application/payments",
           },
           {
-            label:"Hisory and Comments",
+            label:"History and Comments",
             slug:"assessors/grant/application/history-and-comments",
+          },
+          {
+            label:"Post Success Report",
+            slug:"assessors/grant/application/post-success-report",
+          },
+          {
+            label:"Expenditures",
+            slug:"assessors/grant/application/expenditures"
           }
         ],
       },

@@ -60,7 +60,7 @@ export default defineConfig({
             slug: "assessors/dashboard/grants-list",
           },
           { label: "Reports", slug: "assessors/add-criteria" },
-          { label: "Forms", slug: "assessors/add-criteria" },
+          { label: "Forms", slug: "assessors/dashboard/forms" },
           { label: "Settings", slug: "assessors/add-criteria" },
         ],
       },

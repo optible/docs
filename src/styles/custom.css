@@ -199,6 +199,11 @@
     color: var(--text)
 }
 
+main{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
 b,
 strong {
     font-weight: 500;

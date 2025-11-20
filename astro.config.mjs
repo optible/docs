@@ -143,16 +143,6 @@ export default defineConfig({
       // },
       {
         collapsed: true,
-        label: "Trust Center",
-        items: [{ "label": "Compliance", "slug": "trust-center/compliance" }],
-      },
-      {
-        collapsed: true,
-        label: "Changelog",
-        autogenerate: { directory: 'changelog' },
-      },
-      {
-        collapsed: true,
         label: "Knowledge Base",
         autogenerate: { directory: 'knowledge-base' },
       }
